@@ -60,27 +60,22 @@ public class ArrayOps {
          }
          return false;
      }
-
-    public static boolean isLocationMagic(int[][] matrix, int row, int col) {
-        int rowSum = (sumRows(matrix))[row];
-        int colSum = (sumCols(matrix))[col];
-        if (colSum == rowSum) return true;
-        return false;
-    }
-
-
-
-
-
-
-     public static String arrToString(int[] arr){
-        if (arr.length == 0) return "{}";
-        String output = "{";
-        for (int i = 0; i < arr.length-1; i++){
-          output = output +  arr[i] + ", ";
-        }
-        output = output + arr[arr.length-1] + "}";
-        return output;
-}
+// 
+//     public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+//         int rowSum = (sumRows(matrix))[row];
+//         int colSum = (sumCols(matrix))[col];
+//         if (colSum == rowSum) return true;
+//         return false;
+//     }
+//
+//      public static String arrToString(int[] arr){
+//         if (arr.length == 0) return "{}";
+//         String output = "{";
+//         for (int i = 0; i < arr.length-1; i++){
+//           output = output +  arr[i] + ", ";
+//         }
+//         output = output + arr[arr.length-1] + "}";
+//         return output;
+// }
 
 }
