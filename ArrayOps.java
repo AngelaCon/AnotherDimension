@@ -53,13 +53,21 @@ public class ArrayOps {
          return false;
       }
 
-     // public static boolean isColMagic(int[][] matrix) {
-     //     int[] arr = sumCols(matrix);
-     //     for (int i = 0; i < arr.length-1; i++) {
-     //         if (arr[i] == arr[i+1]) return true;
-     //     }
-     //     return false;
-     // }
+     public static boolean isColMagic(int[][] matrix) {
+         int[] arr = sumCols(matrix);
+         for (int i = 0; i < arr.length-1; i++) {
+             if (arr[i] == arr[i+1]) return true;
+         }
+         return false;
+     }
+
+    public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+        int rowSum = (sumRows(matrix))[row];
+        int colSum = (sumCols(matrix))[col];
+        if (colSum == rowSum) return true;
+        return false;
+    }
+
 
 
 
