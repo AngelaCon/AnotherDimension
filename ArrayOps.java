@@ -68,14 +68,4 @@ public class ArrayOps {
         return false;
     }
 
-     public static String arrToString(int[] arr){
-        if (arr.length == 0) return "{}";
-        String output = "{";
-        for (int i = 0; i < arr.length-1; i++){
-          output = output +  arr[i] + ", ";
-        }
-        output = output + arr[arr.length-1] + "}";
-        return output;
-}
-
 }
