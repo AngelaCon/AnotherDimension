@@ -82,4 +82,6 @@ public class Tester {
         System.out.println(ArrayOps.isLocationMagic(v2D, 1, 1)); //true
 
     }
+
+    // I used my friend Steven Lei's tester cases
 }
