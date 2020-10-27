@@ -68,4 +68,13 @@ public class ArrayOps {
         return false;
     }
 
+    public static int sum(int[][]arr){
+            int sum = 0;
+            for (int i = 0; i < arr.length;i++){
+                for (int h = 0; h<arr[i].length;h++ ) {
+                    sum += arr[i][h];
+                }
+            }
+            return sum;
+        }
 }
